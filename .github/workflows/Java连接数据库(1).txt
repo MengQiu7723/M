@@ -1,0 +1,27 @@
+<%
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+	} catch (Exception e) {
+		out.print(e);
+	}
+	try {
+		request.setCharacterEncoding("utf-8");
+		String url = "jdbc:mysql://localhost:3306/news?useSSL=false&characterEncoding=utf8";
+		String user = "root";
+		String password = "123456";
+		Connection conn = DriverManager.getConnection(url, user, password);
+		String sql = "select * from user where userName=? and userPassword=?";
+		PreparedStatement pre = conn.prepareStatement(sql);
+		ResultSet rs = pre.executeQuery();
+		while (rs.next()) {
+			out.print("<p>ÓÃ»§Ãû£º<input type='text' value='" + rs.getString(1) + "'/></p>");
+		}
+		if (rs != null)
+			rs.close();
+		if (stmt != null)
+			stmt.close();
+		if (con != null)
+			con.close();
+	} catch (Exception e) {
+		out.print(e);
+	}

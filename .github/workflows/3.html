@@ -1,0 +1,261 @@
+</l><!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/slide.js"></script>
+    <!--自适屏-->
+    <script type="text/javascript" src="js/adapt.js"></script>
+    
+</head>
+
+
+	
+<body>
+<div class="big">
+
+<!--自适屏开始-->
+<div class="box" :style="{
+	            'transformOrigin':'center top',
+	            'transform':`scale(${scalseNum},${scalseNum})`,'-webkit-transform':`scale(${scalseNum},${scalseNum})`,'-moz-transform':`scale(${scalseNum},${scalseNum})`,'-o-transform':`scale(${scalseNum},${scalseNum})`,'-ms-transform':`scale(${scalseNum},${scalseNum})`
+	        }">
+</div>
+<!--自适屏结束-->
+
+<div class="container">
+<div class="top_hover">
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎来到读书天堂</div>
+			<div class="fr">
+				<div class="login_btn fl">
+					<a href="#">登录</a>
+					<span>|</span>
+					<a href="#">注册</a>
+					<span>|</span>
+					<a href="#">用户中心</a>
+					<span>|</span>
+					<a href="#">我的收藏</a>
+					<span>|</span>
+					<a href="#">我的浏览记录</a>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="search_bar clearfix">
+	    <div class="logo">
+        <div class="logo_img"><img src="img/logo.png" width="100%" height="100%"></div>
+        <div class="logo_words">高志成</div>
+        </div>
+		<div class="search_con fl">
+            <form method="get" action="http://baidu.com/s" target="new"><!--搜索栏搜索-->
+            <input type="text"  class="input_text fl" name="wd" placeholder="搜索内容"/>
+            <input type="submit" value="搜索"  class="input_btn fr"/>
+            <!--
+			<input type="text" class="input_text fl" name="wd" placeholder="搜索商品">
+			<input type="button" class="input_btn fr" name="" value="搜索">
+            <input type="hidden" name="ie" value="utf-8" />
+            <input type="hidden" name="tn" value="ace" />
+            -->
+            </form>
+		</div>  
+	</div>
+</div>
+
+
+
+
+
+
+<div class="content">
+	<div class="navbar_con">
+		<div class="navbar">
+			<h1 class="fl">书城分类</h1>
+			<ul class="navlist fl">
+				<li class="navlist_a_hend"><a href="">首页</a></li>
+				<li class="interval">
+				<li><a href="">推荐</a></li>
+				<li class="interval">|</li>
+				<li><a href="">热门</a></li>
+				<li class="interval">|</li>
+				<li><a href="">作者</a></li>
+				<li class="interval">|</li>
+				<li><a href="">排行版</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="center_con clearfix">
+		<ul class="subnav fl">
+			<li><a href="#model01" >小说类</a></li>
+			<li><a href="#model02" >励志鸡汤类</a></li>
+			<li><a href="#" >儿童类</a></li>
+			<li><a href="#" >科普类</a></li>
+			<li><a href="#" >考研类</a></li>
+			<li><a href="#" >经济类</a></li>
+		</ul>
+		<div class="slide fl">
+			<ul class="slide_pics">
+				<li><img src="img/轮播1.jpg" width="100%" height="100%"></li>
+				<li><img src="img/轮播2.jpg" width="100%" height="100%"></li>
+				<li><img src="img/轮播.jpg" width="100%" height="100%"></li>
+				<li><img src="img/轮播4.jpg" width="105%" height="100%"></li>
+			</ul>
+			<ul class="points"></ul>
+		</div>
+		<div class="adv fl">
+			<ul class="subnavl fl">
+				<li><a href="#model01" >小说类</a></li>
+				<li><a href="#model02" >励志鸡汤类</a></li>
+				<li><a href="#" >儿童类</a></li>
+				<li><a href="#" >科普类</a></li>
+				<li><a href="#" >考研类</a></li>
+				<li><a href="#" >经济类</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<div class="list_title_color"></div>
+			<h3 class="fl" id="model01">小说类</h3>
+			<div class="subtitle fl">
+				<a href="#">莫负寒夏</a>
+				<a href="#">平凡的世界</a>
+				<a href="#">人生</a>
+			</div>
+			<a href="#" class="book_more fr">查看更多 ></a>
+		</div>
+
+		<div class="book_con clearfix">
+			<div class="book_banner fl"><img src="img/1.jpg"></div>
+			<ul class="book_list fl">
+				<li>
+					<a href="#"><img src="img/99.jpg"></a>
+                    <div class="details">《莫负寒夏》是知名作家丁墨创作的商战言情小说，言情为主剧情为辅，有甜有虐大团圆结局</div>
+					<div class="prize">¥ 30.00</div>
+				</li>
+				<li>
+					<a href="#"><img src="img/1010.jpg"></a>
+                    <div class="details">《平凡的世界》是中国作家路遥创作的一部百万字的小说</div>
+					<div class="prize">¥ 5.50</div>
+				</li>
+				<li>
+					<a href="#"><img src="img/1111.jpg"></a>
+                    <div class="details">《人生》是作家路遥创作的小说，也是其成名作</div>
+					<div class="prize">¥ 3.90</div>
+				</li>
+				<li>
+					<a href="#"><img src="img/1212.jpg"></a>
+                    <div class="details">《百年孤独》作品融入神话传说、民间故事、宗教典故等神秘因素</div>
+					<div class="prize">¥ 25.80</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<div class="list_title_color1"></div>
+			<h3 class="fl" id="model02">励志鸡汤类</h3>
+			<div class="subtitle fl">
+				<a href="#">高效对话</a>
+				<a href="#">格局</a>	
+				<a href="#">别生气啦</a>
+				<a href="#">董卿</a>				
+			</div>
+			<a href="#" class="book_more fr">查看更多 ></a>
+		</div>
+
+		<div class="book_con clearfix">
+			<div class="book_banner fl"><img src="img/励志banner.jfif"></div>
+			<ul class="book_list fl">
+				<li>
+					<a href="#"><img src="img/1313.jpg"></a>
+                    <div class="details">《别生气啦》是日本超人气禅师小池龙之介的最新散文集</div>
+					<div class="prize">¥ 48.00</div>
+				</li>
+				<li>
+					<a href="#"><img src="img/1414.jpg"></a>
+                    <div class="details">《董卿》读懂董卿的一生</div>
+					<div class="prize">¥ 46.00</div>
+				</li>
+				<li>
+					<a href="#"><img src="img/1515.jpg"></a>
+                    <div class="details">化解冲突，避免误解，提升人际，专注高效</div>
+					<div class="prize">¥ 19.00</div>
+				</li>
+				<li>
+					<a href="#"><img src="img/1616.jpg"></a>
+                    <div class="details">此书将提升你的格局</div>
+					<div class="prize">¥ 25.00</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+    
+     <!-- 分页开始 -->
+<div id="paging_div">
+  <div id="paging">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end">
+        <li class="page-item disabled">
+          <a class="page-link" href="2.html" tabindex="-1">上一页</a>
+        </li>
+        <li class="page-item disabled"><a class="page-link" href="index.html">1</a></li>
+        <li class="page-item "><a class="page-link" href="2.html">2</a></li>
+        <li class="page-item "><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#javascript:">下一页</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+  <!-- 分页结束 -->
+</div>
+
+
+
+
+	<div class="footer">
+		<div class="foot_link">
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+			<span>|</span>
+			<a href="#">招聘人才</a>
+			<span>|</span>
+			<a href="#">友情链接</a>		
+		</div>
+		<p>CopyRight © 2019 阳江职业技术学院 All Rights Reserved</p>
+		<p>电话：12345678   京ICP备12345678号</p>
+        </div>
+	</div>
+
+	<div class="clear"></div><!-- 清除浮动影响 -->
+</div>	
+</div>
+<script>
+setInterval(function(){
+	if(getScrollTop()>70){
+		set_top_middle1();
+	}else
+	{
+		set_top_middle2();
+	}
+},20);
+</script>
+</body>
+</html>
